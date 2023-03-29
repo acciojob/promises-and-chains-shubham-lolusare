@@ -12,7 +12,7 @@ btn.addEventListener("click",(event)=>{
 		.then((data)=>{
 			alert(`Welcome, ${data}. You can vote.`);
 		},(error)=>{
-			alert(`Oh sorry ${error}. You aren't old enough.`);
+			alert(`Oh sorry ${error}. You aren't old enough.`+"\nPlease enter valid details");
 		})
 });
 
