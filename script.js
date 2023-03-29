@@ -1,10 +1,13 @@
-let form = document.getElementById("data-form");
+let btn = document.querySelector("button#btn");
 let name = document.getElementById("name");
 let age = document.getElementById("age");
+let form = document.getElementById("data-form");
 
-
-form.addEventListener("submit",(event)=>{
+form.onsubmit = (event) => {
 	event.preventDefault();
+}
+
+btn.addEventListener("click",(event)=>{
 	evaluate(name.value , age.value)
 		.then((data)=>{
 			alert(`Welcome, ${data}. You can vote`);
