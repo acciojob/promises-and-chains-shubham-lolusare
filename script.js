@@ -10,9 +10,9 @@ form.onsubmit = (event) => {
 btn.addEventListener("click",(event)=>{
 	evaluate(name.value , age.value)
 		.then((data)=>{
-			alert(`Welcome, ${data}. You can vote`);
+			alert(`Welcome, ${data}. You can vote.`);
 		},(error)=>{
-			alert(`Oh sorry ${error}. You aren't old enough.`);
+			alert(`Please enter valid details`);
 		})
 });
 
